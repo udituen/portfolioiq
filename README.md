@@ -4,28 +4,7 @@ A 4-agent LangGraph workflow (Researcher → Analyst → Critic → Decision) wi
 
 ## Architecture
 
-```
-User Query (ticker + question)
-         ↓
-┌─────────────────────────────────────────────────────────────┐
-│                    LangGraph Workflow                       │
-│                                                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
-│  │  Researcher  │───▶│   Analyst    │───▶│    Critic   │   │
-│  │              │    │              │    │  (Guardrail) │   │
-│  │ Yahoo Finance│    │ Score 0-10   │    │ PASS / FAIL  │   │
-│  │ FAISS RAG    │    │ BULL/BEAR    │◀───│ (retry loop) │  │
-│  └──────────────┘    └──────────────┘    └──────┬───────┘   │
-│                                                 │ PASS      │
-│                                          ┌──────▼───────┐   │
-│                                          │   Decision   │   │
-│                                          │ BUY/HOLD/SELL│   │
-│                                          └──────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-         ↓
-Structured JSON recommendation with confidence score,
-target price range, key factors, risks, and rationale
-```
+<img width="2924" height="1044" alt="image" src="https://github.com/user-attachments/assets/eac11ccb-b61a-42c4-93d6-4be22b3478de" />
 
 ---
 
