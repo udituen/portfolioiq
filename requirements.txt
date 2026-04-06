@@ -1,0 +1,15 @@
+fastapi==0.109.0
+uvicorn==0.27.0
+langgraph
+langchain
+langchain-openai
+langchain-community
+langsmith
+faiss-cpu
+yfinance==0.2.37
+pydantic==2.5.3
+python-dotenv==1.0.0
+tiktoken==0.6.0
+pandas==2.1.4
+numpy==1.26.4
+python-multipart==0.0.9
