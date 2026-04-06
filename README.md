@@ -33,9 +33,9 @@ target price range, key factors, risks, and rationale
 
 | Agent | Role | Tools |
 |---|---|---|
-| **Researcher** | Gathers factual market data — no interpretation | Yahoo Finance (price, news, history) + FAISS knowledge base |
+| **Researcher** | Gathers factual market data, no interpretation | Yahoo Finance (price, news, history) + FAISS knowledge base |
 | **Analyst** | Scores the investment opportunity (0-10) | Structured output via `with_structured_output` |
-| **Critic** | Stress-tests analysis — guardrail PASS/FAIL | Routes back to Researcher if data insufficient |
+| **Critic** | Stress-tests analysis, guardrail PASS/FAIL | Routes back to Researcher if data insufficient |
 | **Decision** | Final BUY/HOLD/SELL synthesis | Weighs all three prior agent outputs |
 
 ---
@@ -43,17 +43,16 @@ target price range, key factors, risks, and rationale
 
 ## Tech Stack
 
-Technology 
-|---|
-LangGraph 1.0 
- OpenAI GPT-4o-mini 
-Yahoo Finance (yfinance) 
-FAISS + OpenAI Embeddings 
-FastAPI + Pydantic 
-LangSmith tracing 
-Docker 
-GCP Cloud Run 
-GitHub Actions + Workload Identity Federation 
+
+LangGraph 1.0 |
+OpenAI GPT-4o-mini |
+Yahoo Finance (yfinance) |
+FAISS + OpenAI Embeddings |
+FastAPI + Pydantic |
+LangSmith tracing |
+Docker |
+GCP Cloud Run |
+GitHub Actions + Workload Identity Federation |
 
 ---
 
