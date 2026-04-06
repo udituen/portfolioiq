@@ -43,17 +43,17 @@ target price range, key factors, risks, and rationale
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Agent Framework | LangGraph 1.0 |
-| LLM | OpenAI GPT-4o-mini |
-| Financial Data | Yahoo Finance (yfinance) |
-| Vector Store | FAISS + OpenAI Embeddings |
-| API | FastAPI + Pydantic |
-| Observability | LangSmith tracing |
-| Containerisation | Docker |
-| Deployment | GCP Cloud Run |
-| CI/CD | GitHub Actions + Workload Identity Federation |
+Technology 
+|---|
+LangGraph 1.0 
+ OpenAI GPT-4o-mini 
+Yahoo Finance (yfinance) 
+FAISS + OpenAI Embeddings 
+FastAPI + Pydantic 
+LangSmith tracing 
+Docker 
+GCP Cloud Run 
+GitHub Actions + Workload Identity Federation 
 
 ---
 
